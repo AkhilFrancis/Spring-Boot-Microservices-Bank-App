@@ -79,27 +79,6 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <image>
-                        <name>akhilfrancis7/${project.artifactId}:s4</name>
-                        <builder>paketobuildpacks/builder-jammy-base</builder>
-                        <buildpacks>
-                            <buildpack>paketo-buildpacks/java</buildpack>
-                        </buildpacks>
-                        <env>
-                            <BP_JVM_VERSION>21</BP_JVM_VERSION>
-                        </env>
-                    </image>
-                    <docker>
-                        <publishRegistry>
-                            <username>akhilfrancis7</username>
-                        </publishRegistry>
-                    </docker>
-                </configuration>
-            </plugin>
-            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
@@ -118,7 +97,7 @@
                 <version>3.5.1</version>
                 <configuration>
                     <to>
-                        <image>akhilfrancis7/${project.artifactId}:s4</image>
+                        <image>akhilfrancis7/${project.artifactId}:s6</image>
                     </to>
                 </configuration>
             </plugin>
