@@ -16,15 +16,23 @@ spring:
     show-sql: true
   application:
     name: accounts
+  config:
+    import:
+      - "application_qa.yml"
+      - "application_prod.yml"
+  profiles:
+    active:
+      - "qa"
+
 
 build:
-  version: "1.0"
+  version: "3.0"
 
 accounts:
   message: "Welcome to akhilfrancis accounts related local APIs "
   contactDetails:
-    name: "John Doe - Developer"
-    email: "john@eazybank.com"
+    name: "Akhil Francis - Developer"
+    email: "akhilfrancis"
   onCallSupport:
     - (555) 555-1234
     - (555) 523-1345
