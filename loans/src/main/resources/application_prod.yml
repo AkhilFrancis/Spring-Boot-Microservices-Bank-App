@@ -6,7 +6,7 @@ spring:
 build:
   version: "1.0"
 
-accounts:
+loans:
   message: "Welcome to akhilfrancis loans related Prod APIs "
   contactDetails:
     name: "Akhil Francis - Prod"
